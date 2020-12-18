@@ -19,7 +19,152 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- google font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet"> 
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'hourin.myshopify.com',
+                  storefrontAccessToken: 'b4732bdaca5262b3cc5c34fdbcc67cf6',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  ui.createComponent('product', {
+                    id: '6148790649014',
+                    node: document.getElementById('product-component-1608256406722'),
+                    moneyFormat: '%C2%A5%7B%7Bamount_no_decimals%7D%7D',
+                    options: {
+              "product": {
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "calc(25% - 20px)",
+                      "margin-left": "20px",
+                      "margin-bottom": "50px"
+                    }
+                  },
+                  "button": {
+                    "font-family": "Gill Sans, sans-serif",
+                    ":hover": {
+                      "background-color": "#000000"
+                    },
+                    "background-color": "#000000",
+                    ":focus": {
+                      "background-color": "#000000"
+                    },
+                    "border-radius": "25px",
+                    "padding-left": "25px",
+                    "padding-right": "25px"
+                  }
+                },
+                "contents": {
+                  "img": false,
+                  "title": false,
+                  "price": false
+                },
+                "text": {
+                  "button": "Add to cart"
+                }
+              },
+              "productSet": {
+                "styles": {
+                  "products": {
+                    "@media (min-width: 601px)": {
+                      "margin-left": "-20px"
+                    }
+                  }
+                }
+              },
+              "modalProduct": {
+                "contents": {
+                  "img": false,
+                  "imgWithCarousel": true,
+                  "button": false,
+                  "buttonWithQuantity": true
+                },
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "100%",
+                      "margin-left": "0px",
+                      "margin-bottom": "0px"
+                    }
+                  },
+                  "button": {
+                    "font-family": "Gill Sans, sans-serif",
+                    ":hover": {
+                      "background-color": "#000000"
+                    },
+                    "background-color": "#000000",
+                    ":focus": {
+                      "background-color": "#000000"
+                    },
+                    "border-radius": "25px",
+                    "padding-left": "25px",
+                    "padding-right": "25px"
+                  }
+                },
+                "text": {
+                  "button": "Add to cart"
+                }
+              },
+              "cart": {
+                "styles": {
+                  "button": {
+                    "font-family": "Gill Sans, sans-serif",
+                    ":hover": {
+                      "background-color": "#000000"
+                    },
+                    "background-color": "#000000",
+                    ":focus": {
+                      "background-color": "#000000"
+                    },
+                    "border-radius": "25px"
+                  }
+                },
+                "text": {
+                  "total": "Subtotal",
+                  "button": "Checkout"
+                }
+              },
+              "toggle": {
+                "styles": {
+                  "toggle": {
+                    "font-family": "Gill Sans, sans-serif",
+                    "background-color": "#000000",
+                    ":hover": {
+                      "background-color": "#000000"
+                    },
+                    ":focus": {
+                      "background-color": "#000000"
+                    }
+                  }
+                }
+              }
+            },
+                  });
+                });
+              }
+            })();
+            /*]]>*/
+            </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -76,7 +221,7 @@
                             <!-- <i class="fas fa-4x fa-gem text-primary mb-4"></i>
                             <h3 class="h4 mb-2">Sturdy Themes</h3> -->
                             <p class="text-muted mb-0　p-o　profile-text f-1">
-                                雅号 芳林(本名 角谷 美智子)<br>齢70より書を志す。<br> 中国人書道家馬仁武先生に師事。<br> 隷書、篆書、甲骨文が専門。</p>
+                                雅号 芳林(本名 角谷 美智子)<br>齢70より書を志す。<br> 中国人書道家馬仁武先生に師事。<br> 隷書体、篆書体、甲骨文が専門。</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
@@ -113,8 +258,8 @@
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.png">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/1_1.png" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-category text-white-50 f-1">隷書体</div>
+                                <div class="project-name">Art Work vol.1</div>
                             </div>
                         </a>
                     </div>
@@ -122,8 +267,9 @@
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.png">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/2_1.png" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-category text-white-50 f-1">隷書体</div>
+                                <div class="project-name">Art Work vol.2</div>
+                                <div id='product-component-1608256406722'></div>
                             </div>
                         </a>
                     </div>
@@ -131,8 +277,8 @@
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.png">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/3_1.png" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-category text-white-50 f-1">隷書体</div>
+                                <div class="project-name">Art Work vol.3</div>
                             </div>
                         </a>
                     </div>
@@ -140,8 +286,8 @@
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.png">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/4_1.png" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-category text-white-50 f-1">篆書体</div>
+                                <div class="project-name">Art Work vol.4</div>
                             </div>
                         </a>
                     </div>
@@ -149,8 +295,8 @@
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.png">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/5_1.png" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-category text-white-50 f-1">隷書体</div>
+                                <div class="project-name">Art Work vol.5</div>
                             </div>
                         </a>
                     </div>
@@ -158,8 +304,8 @@
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.png">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/6_1.png" alt="" />
                             <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-category text-white-50 f-1">篆書体</div>
+                                <div class="project-name">Art Work vol.6</div>
                             </div>
                         </a>
                     </div>
@@ -195,6 +341,7 @@
                     </div>
                 </div>
             </div>
+            
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
