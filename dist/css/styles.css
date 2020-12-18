@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charseproject-category "UTF-8";
 /*!
 * Start Bootstrap - Creative v6.0.4 (https://startbootstrap.com/theme/creative)
 * Copyright 2013-2020 Start Bootstrap
@@ -10169,4 +10169,12 @@ header.masthead h1 {
 
 .f-1 {
   font-family: 'Sawarabi Mincho', sans-serif!important;
+}
+
+.f-2 {
+  font-family: 'PT Sans', sans-serif!important;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 0.9rem;
 }

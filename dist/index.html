@@ -19,7 +19,9 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- google font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap" rel="stylesheet"> 
         <script type="text/javascript">
             /*<![CDATA[*/
             (function () {
@@ -165,6 +167,441 @@
             })();
             /*]]>*/
             </script>
+            <script type="text/javascript">
+                /*<![CDATA[*/
+                (function () {
+                  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                  if (window.ShopifyBuy) {
+                    if (window.ShopifyBuy.UI) {
+                      ShopifyBuyInit();
+                    } else {
+                      loadScript();
+                    }
+                  } else {
+                    loadScript();
+                  }
+                  function loadScript() {
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = scriptURL;
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                    script.onload = ShopifyBuyInit;
+                  }
+                  function ShopifyBuyInit() {
+                    var client = ShopifyBuy.buildClient({
+                      domain: 'hourin.myshopify.com',
+                      storefrontAccessToken: 'b4732bdaca5262b3cc5c34fdbcc67cf6',
+                    });
+                    ShopifyBuy.UI.onReady(client).then(function (ui) {
+                      ui.createComponent('product', {
+                        id: '6149090607286',
+                        node: document.getElementById('product-component-1608279086213'),
+                        moneyFormat: '%C2%A5%7B%7Bamount_no_decimals%7D%7D',
+                        options: {
+                  "product": {
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "calc(25% - 20px)",
+                          "margin-left": "20px",
+                          "margin-bottom": "50px"
+                        }
+                      },
+                      "button": {
+                        "font-family": "Gill Sans, sans-serif",
+                        ":hover": {
+                          "background-color": "#000000"
+                        },
+                        "background-color": "#000000",
+                        ":focus": {
+                          "background-color": "#000000"
+                        },
+                        "border-radius": "25px",
+                        "padding-left": "25px",
+                        "padding-right": "25px"
+                      }
+                    },
+                    "contents": {
+                      "img": false,
+                      "title": false,
+                      "price": false
+                    },
+                    "text": {
+                      "button": "Add to cart"
+                    }
+                  },
+                  "productSet": {
+                    "styles": {
+                      "products": {
+                        "@media (min-width: 601px)": {
+                          "margin-left": "-20px"
+                        }
+                      }
+                    }
+                  },
+                  "modalProduct": {
+                    "contents": {
+                      "img": false,
+                      "imgWithCarousel": true,
+                      "button": false,
+                      "buttonWithQuantity": true
+                    },
+                    "styles": {
+                      "product": {
+                        "@media (min-width: 601px)": {
+                          "max-width": "100%",
+                          "margin-left": "0px",
+                          "margin-bottom": "0px"
+                        }
+                      },
+                      "button": {
+                        "font-family": "Gill Sans, sans-serif",
+                        ":hover": {
+                          "background-color": "#000000"
+                        },
+                        "background-color": "#000000",
+                        ":focus": {
+                          "background-color": "#000000"
+                        },
+                        "border-radius": "25px",
+                        "padding-left": "25px",
+                        "padding-right": "25px"
+                      }
+                    },
+                    "text": {
+                      "button": "Add to cart"
+                    }
+                  },
+                  "cart": {
+                    "styles": {
+                      "button": {
+                        "font-family": "Gill Sans, sans-serif",
+                        ":hover": {
+                          "background-color": "#000000"
+                        },
+                        "background-color": "#000000",
+                        ":focus": {
+                          "background-color": "#000000"
+                        },
+                        "border-radius": "25px"
+                      }
+                    },
+                    "text": {
+                      "total": "Subtotal",
+                      "button": "Checkout"
+                    }
+                  },
+                  "toggle": {
+                    "styles": {
+                      "toggle": {
+                        "font-family": "Gill Sans, sans-serif",
+                        "background-color": "#000000",
+                        ":hover": {
+                          "background-color": "#000000"
+                        },
+                        ":focus": {
+                          "background-color": "#000000"
+                        }
+                      }
+                    }
+                  }
+                },
+                      });
+                    });
+                  }
+                })();
+                /*]]>*/
+                </script>
+                <script type="text/javascript">
+                    /*<![CDATA[*/
+                    (function () {
+                      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                      if (window.ShopifyBuy) {
+                        if (window.ShopifyBuy.UI) {
+                          ShopifyBuyInit();
+                        } else {
+                          loadScript();
+                        }
+                      } else {
+                        loadScript();
+                      }
+                      function loadScript() {
+                        var script = document.createElement('script');
+                        script.async = true;
+                        script.src = scriptURL;
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                        script.onload = ShopifyBuyInit;
+                      }
+                      function ShopifyBuyInit() {
+                        var client = ShopifyBuy.buildClient({
+                          domain: 'hourin.myshopify.com',
+                          storefrontAccessToken: 'b4732bdaca5262b3cc5c34fdbcc67cf6',
+                        });
+                        ShopifyBuy.UI.onReady(client).then(function (ui) {
+                          ui.createComponent('product', {
+                            id: '6149093163190',
+                            node: document.getElementById('product-component-1608280068294'),
+                            moneyFormat: '%C2%A5%7B%7Bamount_no_decimals%7D%7D',
+                            options: {
+                      "product": {
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "calc(25% - 20px)",
+                              "margin-left": "20px",
+                              "margin-bottom": "50px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Gill Sans, sans-serif",
+                            ":hover": {
+                              "background-color": "#000000"
+                            },
+                            "background-color": "#000000",
+                            ":focus": {
+                              "background-color": "#000000"
+                            },
+                            "border-radius": "25px",
+                            "padding-left": "25px",
+                            "padding-right": "25px"
+                          }
+                        },
+                        "contents": {
+                          "img": false,
+                          "title": false,
+                          "price": false
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        }
+                      },
+                      "productSet": {
+                        "styles": {
+                          "products": {
+                            "@media (min-width: 601px)": {
+                              "margin-left": "-20px"
+                            }
+                          }
+                        }
+                      },
+                      "modalProduct": {
+                        "contents": {
+                          "img": false,
+                          "imgWithCarousel": true,
+                          "button": false,
+                          "buttonWithQuantity": true
+                        },
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "100%",
+                              "margin-left": "0px",
+                              "margin-bottom": "0px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Gill Sans, sans-serif",
+                            ":hover": {
+                              "background-color": "#000000"
+                            },
+                            "background-color": "#000000",
+                            ":focus": {
+                              "background-color": "#000000"
+                            },
+                            "border-radius": "25px",
+                            "padding-left": "25px",
+                            "padding-right": "25px"
+                          }
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        }
+                      },
+                      "cart": {
+                        "styles": {
+                          "button": {
+                            "font-family": "Gill Sans, sans-serif",
+                            ":hover": {
+                              "background-color": "#000000"
+                            },
+                            "background-color": "#000000",
+                            ":focus": {
+                              "background-color": "#000000"
+                            },
+                            "border-radius": "25px"
+                          }
+                        },
+                        "text": {
+                          "total": "Subtotal",
+                          "button": "Checkout"
+                        }
+                      },
+                      "toggle": {
+                        "styles": {
+                          "toggle": {
+                            "font-family": "Gill Sans, sans-serif",
+                            "background-color": "#000000",
+                            ":hover": {
+                              "background-color": "#000000"
+                            },
+                            ":focus": {
+                              "background-color": "#000000"
+                            }
+                          }
+                        }
+                      }
+                    },
+                          });
+                        });
+                      }
+                    })();
+                    /*]]>*/
+                    </script>
+                    <script type="text/javascript">
+                        /*<![CDATA[*/
+                        (function () {
+                          var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                          if (window.ShopifyBuy) {
+                            if (window.ShopifyBuy.UI) {
+                              ShopifyBuyInit();
+                            } else {
+                              loadScript();
+                            }
+                          } else {
+                            loadScript();
+                          }
+                          function loadScript() {
+                            var script = document.createElement('script');
+                            script.async = true;
+                            script.src = scriptURL;
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                            script.onload = ShopifyBuyInit;
+                          }
+                          function ShopifyBuyInit() {
+                            var client = ShopifyBuy.buildClient({
+                              domain: 'hourin.myshopify.com',
+                              storefrontAccessToken: 'b4732bdaca5262b3cc5c34fdbcc67cf6',
+                            });
+                            ShopifyBuy.UI.onReady(client).then(function (ui) {
+                              ui.createComponent('product', {
+                                id: '6149108695222',
+                                node: document.getElementById('product-component-1608280286850'),
+                                moneyFormat: '%C2%A5%7B%7Bamount_no_decimals%7D%7D',
+                                options: {
+                          "product": {
+                            "styles": {
+                              "product": {
+                                "@media (min-width: 601px)": {
+                                  "max-width": "calc(25% - 20px)",
+                                  "margin-left": "20px",
+                                  "margin-bottom": "50px"
+                                }
+                              },
+                              "button": {
+                                "font-family": "Gill Sans, sans-serif",
+                                ":hover": {
+                                  "background-color": "#000000"
+                                },
+                                "background-color": "#000000",
+                                ":focus": {
+                                  "background-color": "#000000"
+                                },
+                                "border-radius": "25px",
+                                "padding-left": "25px",
+                                "padding-right": "25px"
+                              }
+                            },
+                            "contents": {
+                              "img": false,
+                              "title": false,
+                              "price": false
+                            },
+                            "text": {
+                              "button": "Add to cart"
+                            }
+                          },
+                          "productSet": {
+                            "styles": {
+                              "products": {
+                                "@media (min-width: 601px)": {
+                                  "margin-left": "-20px"
+                                }
+                              }
+                            }
+                          },
+                          "modalProduct": {
+                            "contents": {
+                              "img": false,
+                              "imgWithCarousel": true,
+                              "button": false,
+                              "buttonWithQuantity": true
+                            },
+                            "styles": {
+                              "product": {
+                                "@media (min-width: 601px)": {
+                                  "max-width": "100%",
+                                  "margin-left": "0px",
+                                  "margin-bottom": "0px"
+                                }
+                              },
+                              "button": {
+                                "font-family": "Gill Sans, sans-serif",
+                                ":hover": {
+                                  "background-color": "#000000"
+                                },
+                                "background-color": "#000000",
+                                ":focus": {
+                                  "background-color": "#000000"
+                                },
+                                "border-radius": "25px",
+                                "padding-left": "25px",
+                                "padding-right": "25px"
+                              }
+                            },
+                            "text": {
+                              "button": "Add to cart"
+                            }
+                          },
+                          "cart": {
+                            "styles": {
+                              "button": {
+                                "font-family": "Gill Sans, sans-serif",
+                                ":hover": {
+                                  "background-color": "#000000"
+                                },
+                                "background-color": "#000000",
+                                ":focus": {
+                                  "background-color": "#000000"
+                                },
+                                "border-radius": "25px"
+                              }
+                            },
+                            "text": {
+                              "total": "Subtotal",
+                              "button": "Checkout"
+                            }
+                          },
+                          "toggle": {
+                            "styles": {
+                              "toggle": {
+                                "font-family": "Gill Sans, sans-serif",
+                                "background-color": "#000000",
+                                ":hover": {
+                                  "background-color": "#000000"
+                                },
+                                ":focus": {
+                                  "background-color": "#000000"
+                                }
+                              }
+                            }
+                          }
+                        },
+                              });
+                            });
+                          }
+                        })();
+                        /*]]>*/
+                        </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -178,6 +615,8 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#profile">Profile</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        <div class="line-it-button" data-lang="ja" data-type="friend" data-lineid="@832rjcjl" data-count="true" style="display: none;"></div>
+                         <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
                     </ul>
                 </div>
             </div>
@@ -191,8 +630,8 @@
                         <hr class="divider my-3" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-weight-light mb-5">Welcome to the deep and elegant “SHODO WORLD"</p>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">CHECK HOURIN ART</a>
+                        <p class="text-white-75 font-weight-light mb-5">Welcome to the deep and elegant “HOURIN WORLD"</p>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">FIND ARTWORKS</a>
                     </div>
                 </div>
             </div>
@@ -260,6 +699,7 @@
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50 f-1">隷書体</div>
                                 <div class="project-name">Art Work vol.1</div>
+                                <div id='product-component-1608279086213'></div>
                             </div>
                         </a>
                     </div>
@@ -279,6 +719,7 @@
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50 f-1">隷書体</div>
                                 <div class="project-name">Art Work vol.3</div>
+                                <div class="text-white-50 f-2">Sold Out</div>
                             </div>
                         </a>
                     </div>
@@ -288,6 +729,7 @@
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50 f-1">篆書体</div>
                                 <div class="project-name">Art Work vol.4</div>
+                                <div class="text-white-50 f-2">Sold Out</div>
                             </div>
                         </a>
                     </div>
@@ -297,6 +739,7 @@
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50 f-1">隷書体</div>
                                 <div class="project-name">Art Work vol.5</div>
+                                <div id='product-component-1608280068294'></div>
                             </div>
                         </a>
                     </div>
@@ -306,6 +749,7 @@
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50 f-1">篆書体</div>
                                 <div class="project-name">Art Work vol.6</div>
+                                <div id='product-component-1608280286850'></div>
                             </div>
                         </a>
                     </div>
@@ -324,7 +768,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <h2 class="mt-0">Contact HOURIN!</h2>
                         <hr class="divider my-4" />
                         <p class="text-muted mb-5 f-1">イベント企画依頼、出張イベント、筆文字デザイン各種オリジナルグッズ制作等<br>御用命あればいつでもご相談下さい。</p>
                     </div>
